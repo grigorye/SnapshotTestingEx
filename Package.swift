@@ -26,7 +26,10 @@ let package = Package(
   targets: [
     .target(
       name: "SnapshotTestingEx",
-      dependencies: ["SnapshotTesting", "SnapshotTestingExObjC"]
+      dependencies: [ 
+        "SnapshotTestingExObjC",
+        .product(name: "SnapshotTesting", package: "swift-snapshot-testing")
+      ]
     ),
     .target(
       name: "SnapshotTestingExObjC",
