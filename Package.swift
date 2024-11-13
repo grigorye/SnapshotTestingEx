@@ -20,7 +20,7 @@ let package = Package(
   ],
 
   dependencies: [
-    .package(url: "https://github.com/JWStaiert/SnapshotTesting.git", .branch("devSnapshotCompare2"))
+    .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", .branch("main"))
   ],
 
   targets: [
